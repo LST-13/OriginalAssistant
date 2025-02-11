@@ -17,6 +17,7 @@ import fun.qianxiao.originalassistant.appquery.BaifenAppQuerier;
 import fun.qianxiao.originalassistant.appquery.HLXAppQuerier;
 import fun.qianxiao.originalassistant.appquery.IQuery;
 import fun.qianxiao.originalassistant.appquery.TapTapAppQuerier;
+import fun.qianxiao.originalassistant.appquery.APKComboAppQuerier;
 import fun.qianxiao.originalassistant.bean.AppQueryResult;
 
 /**
@@ -66,6 +67,11 @@ public class AppQueryManager {
          * 百分网
          */
         BAIFEN(BaifenAppQuerier.class, "百分网", R.drawable.logo_baifen);
+        /**
+         * APKCombo
+         */
+        
+        APKCOMBO(APKComboAppQuerier.class,"Apkcombo",R.drawable.logo_apkcombo)
 
         private final Class<? extends AbstractAppQuerier<?, ?>> channel;
         private final String commonName;
